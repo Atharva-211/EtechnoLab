@@ -1,10 +1,9 @@
-import React from "react";
+import React from 'react';
 
 const Topbar = () => {
   return (
     <div className="container-fluid bg-dark p-0 wow fadeIn" data-wow-delay="0.1s">
       <div className="row gx-0 d-none d-lg-flex">
-        {/* Left Side - Contact Info */}
         <div className="col-lg-7 px-5 text-start">
           <div className="h-100 d-inline-flex align-items-center py-3 me-3">
             <a className="text-body px-2" href="tel:+0123456789">
@@ -15,8 +14,6 @@ const Topbar = () => {
             </a>
           </div>
         </div>
-
-        {/* Right Side - Links & Socials */}
         <div className="col-lg-5 px-5 text-end">
           <div className="h-100 d-inline-flex align-items-center py-3 me-2">
             <a className="text-body px-2" href="#">Terms</a>

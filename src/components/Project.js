@@ -1,72 +1,81 @@
-import { useState } from "react";
+import React, { useState } from 'react';
 
 const Project = () => {
-    const [activeTab, setActiveTab] = useState("tab1");
+  const [activeTab, setActiveTab] = useState('tab1'); // State to manage active tab
 
-    return (
-        <div className="container-xxl py-5">
-            <div className="container">
-                <div className="text-center mx-auto mb-5 max-w-lg">
-                    <h4 className="text-primary font-semibold">Our Projects</h4>
-                    <h1 className="text-3xl font-bold">Visit Our Latest Projects And Our Innovative Works</h1>
-                </div>
-                <div className="flex flex-wrap">
-                    <div className="w-full lg:w-1/3 p-4">
-                        <div className="flex flex-col space-y-4">
-                            <button 
-                                className={`w-full text-left p-4 border rounded-md font-bold ${activeTab === "tab1" ? "bg-blue-500 text-white" : "bg-gray-200"}`} 
-                                onClick={() => setActiveTab("tab1")}
-                            >
-                                01. Modern Complex
-                            </button>
-                            <button 
-                                className={`w-full text-left p-4 border rounded-md font-bold ${activeTab === "tab2" ? "bg-blue-500 text-white" : "bg-gray-200"}`} 
-                                onClick={() => setActiveTab("tab2")}
-                            >
-                                02. Royal Hotel
-                            </button>
-                        </div>
-                    </div>
-                    <div className="w-full lg:w-2/3 p-4">
-                        {activeTab === "tab1" && (
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div className="h-80 relative">
-                                    <img src="img/project-1.jpg" className="absolute w-full h-full object-cover rounded-lg" alt="Modern Complex" />
-                                </div>
-                                <div>
-                                    <h1 className="text-2xl font-bold mb-3">25 Years Of Experience In Architecture Industry</h1>
-                                    <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit...</p>
-                                    <ul className="mb-4">
-                                        <li className="text-primary">✔ Design Approach</li>
-                                        <li className="text-primary">✔ Innovative Solutions</li>
-                                        <li className="text-primary">✔ Project Management</li>
-                                    </ul>
-                                    <a href="#" className="btn btn-primary py-2 px-4 bg-blue-500 text-white rounded-md">Read More</a>
-                                </div>
-                            </div>
-                        )}
-                        {activeTab === "tab2" && (
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div className="h-80 relative">
-                                    <img src="img/project-2.jpg" className="absolute w-full h-full object-cover rounded-lg" alt="Royal Hotel" />
-                                </div>
-                                <div>
-                                    <h1 className="text-2xl font-bold mb-3">25 Years Of Experience In Architecture Industry</h1>
-                                    <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit...</p>
-                                    <ul className="mb-4">
-                                        <li className="text-primary">✔ Design Approach</li>
-                                        <li className="text-primary">✔ Innovative Solutions</li>
-                                        <li className="text-primary">✔ Project Management</li>
-                                    </ul>
-                                    <a href="#" className="btn btn-primary py-2 px-4 bg-blue-500 text-white rounded-md">Read More</a>
-                                </div>
-                            </div>
-                        )}
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="container-xxl project py-5">
+      <div className="container">
+        <div className="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: "600px" }}>
+          <h4 className="section-title">Our Projects</h4>
+          <h1 className="display-5 mb-4">Visit Our Latest Projects And Our Innovative Works</h1>
         </div>
-    );
+        <div className="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+          <div className="col-lg-4">
+            <div className="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
+              <button
+                className={`nav-link w-100 d-flex align-items-center text-start p-4 mb-4 ${activeTab === 'tab1' ? 'active' : ''}`}
+                onClick={() => setActiveTab('tab1')}
+              >
+                <h3 className="m-0">01. Modern Complex</h3>
+              </button>
+              <button
+                className={`nav-link w-100 d-flex align-items-center text-start p-4 mb-4 ${activeTab === 'tab2' ? 'active' : ''}`}
+                onClick={() => {
+                  setActiveTab('tab2');
+                  console.log('Active Tab:', activeTab); // Debug state
+                }}
+              >
+                <h3 className="m-0">02. Royal Hotel</h3>
+              </button>
+            </div>
+          </div>
+          <div className="col-lg-8">
+            <div className="tab-content w-100">
+              {activeTab === 'tab1' && (
+                <div className="tab-pane fade show active" id="tab-pane-1">
+                  <div className="row g-4">
+                    <div className="col-md-6" style={{ minHeight: "350px" }}>
+                      <div className="position-relative h-100">
+                        <img className="position-absolute img-fluid w-100 h-100" src="img/project-1.jpg" style={{ objectFit: "cover" }} alt="Modern Complex" />
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <h1 className="mb-3">25 Years Of Experience In Architecture Industry</h1>
+                      <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                      <p><i className="fa fa-check text-primary me-3"></i>Design Approach</p>
+                      <p><i className="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
+                      <p><i className="fa fa-check text-primary me-3"></i>Project Management</p>
+                      <a href="" className="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              )}
+              {activeTab === 'tab2' && (
+                <div className="tab-pane fade show active" id="tab-pane-1">
+                <div className="row g-4">
+                  <div className="col-md-6" style={{ minHeight: "350px" }}>
+                    <div className="position-relative h-100">
+                      <img className="position-absolute img-fluid w-100 h-100" src="img/project-1.jpg" style={{ objectFit: "cover" }} alt="Modern Complex" />
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <h1 className="mb-3">26 Years Of Experience In Architecture Industry</h1>
+                    <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <p><i className="fa fa-check text-primary me-3"></i>Design Approach</p>
+                    <p><i className="fa fa-check text-primary me-3"></i>Innovative Solutions</p>
+                    <p><i className="fa fa-check text-primary me-3"></i>Project Management</p>
+                    <a href="" className="btn btn-primary py-3 px-5 mt-3">Read More</a>
+                  </div>
+                </div>
+              </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Project;

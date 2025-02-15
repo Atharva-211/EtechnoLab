@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Facts = () => {
   return (
@@ -11,9 +11,7 @@ const Facts = () => {
                 <img src="img/icons/icon-2.png" alt="Icon" />
               </div>
               <h3 className="mb-3">Design Approach</h3>
-              <p className="mb-0">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.
-              </p>
+              <p className="mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
             </div>
           </div>
         </div>

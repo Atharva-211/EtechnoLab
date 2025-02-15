@@ -1,45 +1,24 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React from 'react';
 
 const About = () => {
   return (
     <div className="container-xxl py-5">
       <div className="container">
         <div className="row g-5">
-          {/* Left Side Images */}
           <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
             <div className="about-img">
-              <img className="img-fluid" src="img/about-1.jpg" alt="About 1" />
-              <img className="img-fluid" src="img/about-2.jpg" alt="About 2" />
+              <img className="img-fluid" src="img/about-1.jpg" alt="" />
+              <img className="img-fluid" src="img/about-2.jpg" alt="" />
             </div>
           </div>
-
-          {/* Right Side Text Content */}
           <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
             <h4 className="section-title">About Us</h4>
-            <h1 className="display-5 mb-4">
-              A Creative Architecture Agency For Your Dream Home
-            </h1>
-            <p>
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-              diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-              lorem sit clita duo justo magna dolore erat amet.
-            </p>
-            <p className="mb-4">
-              Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No
-              stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo
-              nonumy clita sit at, sed sit sanctus dolor eos.
-            </p>
-
-            {/* Years of Experience Section */}
+            <h1 className="display-5 mb-4">A Creative Architecture Agency For Your Dream Home</h1>
+            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+            <p className="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
             <div className="d-flex align-items-center mb-5">
-              <div
-                className="d-flex flex-shrink-0 align-items-center justify-content-center border border-5 border-primary"
-                style={{ width: "120px", height: "120px" }}
-              >
-                <h1 className="display-1 mb-n2" data-toggle="counter-up">
-                  25
-                </h1>
+              <div className="d-flex flex-shrink-0 align-items-center justify-content-center border border-5 border-primary" style={{ width: "120px", height: "120px" }}>
+                <h1 className="display-1 mb-n2" data-toggle="counter-up">25</h1>
               </div>
               <div className="ps-4">
                 <h3>Years</h3>
@@ -47,11 +26,7 @@ const About = () => {
                 <h3 className="mb-0">Experience</h3>
               </div>
             </div>
-
-            {/* Read More Button */}
-            <a className="btn btn-primary py-3 px-5" href="/">
-              Read More
-            </a>
+            <a className="btn btn-primary py-3 px-5" href="">Read More</a>
           </div>
         </div>
       </div>
