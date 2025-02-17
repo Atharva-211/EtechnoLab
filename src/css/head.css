@@ -1,0 +1,73 @@
+/*** Header ***/
+.owl-home-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+  }
+  
+  @media (max-width: 768px) {
+    .header-home .owl-home-item {
+        position: relative;
+        min-height: 500px;
+    }
+  
+    .header-home .owl-home-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+  
+    .header-home .owl-home-item p {
+        font-size: 16px !important;
+    }
+  }
+  
+  .header-home .owl-dots {
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    top: 0;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-home .owl-dots .owl-dot {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: 5px 0;
+    background: var(--dark);
+    transition: .5s;
+  }
+  
+  .header-home .owl-dots .owl-dot.active {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .header-home .owl-dots .owl-dot img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 2px;
+    transition: .5s;
+    opacity: .3;
+  }
+  
+  .header-home .owl-dots .owl-dot.active img {
+    opacity: 1;
+  }
+  
+  .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--light);
+  }

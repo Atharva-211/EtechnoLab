@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import { Element } from 'react-scroll';
-import Topbar from './components/Topbar';
 import Navbar from './components/Navbar';
-import Carousel from './components/Carousel';
+import Home from './components/home';
 import Facts from './components/Facts';
 import Industries from './components/Industries';
 import About from './components/About';
@@ -16,6 +15,16 @@ import WOW from 'wow.js'; // Import WOW from wow.js
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
+import './css/about.css';
+import './css/facts.css';
+import './css/industries.css';
+import './css/services.css';
+import './css/appointment.css';
+import './css/footer.css';
+import './css/head.css';
+import './css/navbar.css';
+import './css/team.css';
+
 
 const App = () => {
   useEffect(() => {
@@ -26,7 +35,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Element name="carousel"><Carousel /></Element>
+      <Element name="home"><Home /></Element>
       <Element name="facts"><Facts /></Element>
       <Element name="about"><About /></Element>
       <Element name="services"><Services /></Element>

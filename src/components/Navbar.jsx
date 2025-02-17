@@ -21,7 +21,7 @@ const Navbar = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarCollapse">
         <div className="navbar-nav ms-auto p-4 p-lg-0">
-          <Link to="carousel" smooth={true} duration={500} className="nav-item nav-link">Home</Link>
+          <Link to="home" smooth={true} duration={500} className="nav-item nav-link">Home</Link>
           <Link to="about" smooth={true} duration={500} className="nav-item nav-link">About</Link>
           <Link to="services" smooth={true} duration={500} className="nav-item nav-link">Services</Link>
           <div className="nav-item dropdown">

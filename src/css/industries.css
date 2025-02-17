@@ -1,0 +1,46 @@
+
+/*** Industrie Section ***/
+.Industrie-item {
+    border-radius: 12px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  .Industrie-item:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+  }
+  
+  .Industrie-item .Industrie-icon {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 120px;
+    transition: background 0.3s ease;
+  }
+  
+  .Industrie-item:hover .Industrie-icon {
+    background: var(--dark); /* Dark background on hover */
+  }
+  
+  .Industrie-item .Industrie-icon img {
+    width: 60px; /* Adjust icon size */
+    height: 60px;
+  }
+  
+  .Industrie-item h3 {
+    font-size: 1.5rem; /* Larger heading */
+    margin-bottom: 1rem;
+  }
+  
+  .Industrie-item p {
+    font-size: 1rem; /* Standard text size */
+    line-height: 1.6; /* Improve readability */
+    color: #666; /* Slightly lighter text color */
+  }
+  
+  

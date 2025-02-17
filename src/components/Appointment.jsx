@@ -39,7 +39,7 @@ const Appointment = () => {
               </div>
               <div className="contact-info">
                 <p>Call Us Now</p>
-                <h3>+012 345 6789</h3>
+                <h3>+91 909-651-9449.</h3>
               </div>
             </div>
             
@@ -49,7 +49,7 @@ const Appointment = () => {
               </div>
               <div className="contact-info">
                 <p>Mail Us Now</p>
-                <h3>info@etechnolab.com</h3>
+                <h3>support@etechnolab.com</h3>
               </div>
             </div>
           </div>

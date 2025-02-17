@@ -1,0 +1,79 @@
+
+/*** Appointment Styles ***/
+.appointment-section {
+    padding: 3rem 0;
+    background-color: #f8f9fa;
+  }
+  
+  .appointment-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .appointment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  
+  
+  
+  .main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #343a40;
+    line-height: 1.2;
+  }
+  
+  .description {
+    color: #6c757d;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .contact-card {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon-box {
+    width: 60px;
+    height: 60px;
+    background: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+  }
+  
+  .icon-box i {
+    color: #B78D65;
+    font-size: 1.5rem;
+  }
+  
+  .contact-info h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #343a40;
+  }
+  
+  .contact-info p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+  }
+  
