@@ -26,18 +26,17 @@ const Industries = () => {
 };
 
 const industries = [
-  { icon: "img/icons/i1.png", name: "Healthcare" },
-  { icon: "img/icons/i2.png", name: "Education" },
-  { icon: "img/icons/i3.png", name: "E-commerce" },
-  { icon: "img/icons/i4.png", name: "Social Media" },
-  { icon: "img/icons/i5.png", name: "Retail" },
-  { icon: "img/icons/i6.png", name: "Manufacturing" },
-  { icon: "img/icons/i7.png", name: "Airways" },
-  { icon: "img/icons/i8.png", name: "Help Desk" },
-  { icon: "img/icons/i9.png", name: "Construction" },
-  { icon: "img/icons/i10.png", name: "Logistics" },
-  { icon: "img/icons/i11.png", name: "Media" },
-  { icon: "img/icons/i12.png", name: "Healthcare" },
+  { icon: "img/i1.png", name: "Healthcare" },
+  { icon: "img/i2.png", name: "Education" },
+  { icon: "img/i3.png", name: "E-commerce" },
+  { icon: "img/i4.png", name: "Social Media" },
+  { icon: "img/i5.png", name: "Retail" },
+  { icon: "img/i6.png", name: "Manufacturing" },
+  { icon: "img/i7.png", name: "Airways" },
+  { icon: "img/i8.png", name: "Help Desk" },
+  { icon: "img/i9.png", name: "Construction" },
+  { icon: "img/i10.png", name: "Logistics" },
+  { icon: "img/i11.png", name: "Media" },
 ];
 
 export default Industries;
