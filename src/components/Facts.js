@@ -6,7 +6,7 @@ const Facts = () => {
       <div className="container pt-5">
       <div className="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: "600px" }}>
           <h4 className="section-title">Our Skills</h4>
-          <h1 className="display-5 mb-4">We Focused On Modern Architecture And Interior Design</h1>
+          <h1 className="display-5 mb-4">Delivering modern software solutions across various domains</h1>
         </div>
         <div className="row g-4">
           {/* Fact Item 1 */}

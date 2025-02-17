@@ -6,6 +6,14 @@
   --dark: #252525;
 }
 
+.logo-img {
+  filter: sepia(1) saturate(3) hue-rotate(-20deg) brightness(0.9);
+}
+
+
+
+
+
 h1,
 h2,
 .h1,
@@ -392,6 +400,51 @@ h6,
 }
 
 
+/*** Industrie Section ***/
+.Industrie-item {
+  border-radius: 12px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.Industrie-item:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+.Industrie-item .Industrie-icon {
+  width: 120px;
+  height: 120px;
+  margin-top: -60px;
+  margin-bottom: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border-radius: 120px;
+  transition: background 0.3s ease;
+}
+
+.Industrie-item:hover .Industrie-icon {
+  background: var(--dark); /* Dark background on hover */
+}
+
+.Industrie-item .Industrie-icon img {
+  width: 60px; /* Adjust icon size */
+  height: 60px;
+}
+
+.Industrie-item h3 {
+  font-size: 1.5rem; /* Larger heading */
+  margin-bottom: 1rem;
+}
+
+.Industrie-item p {
+  font-size: 1rem; /* Standard text size */
+  line-height: 1.6; /* Improve readability */
+  color: #666; /* Slightly lighter text color */
+}
+
+
 /*** Team ***/
 .team-items {
   margin: -.75rem;
@@ -438,32 +491,171 @@ h6,
 }
 
 
-/*** Appointment ***/
-.bootstrap-datetimepicker-widget.bottom {
-  top: auto !important;
+/*** Appointment Styles ***/
+.appointment-section {
+  padding: 3rem 0;
+  background-color: #f8f9fa;
 }
 
-.bootstrap-datetimepicker-widget .table * {
-  border-bottom-width: 0px;
+.appointment-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-.bootstrap-datetimepicker-widget .table th {
-  font-weight: 500;
+.appointment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
-.bootstrap-datetimepicker-widget.dropdown-menu {
-  padding: 10px;
-  border-radius: 2px;
+
+
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #343a40;
+  line-height: 1.2;
 }
 
-.bootstrap-datetimepicker-widget table td.active,
-.bootstrap-datetimepicker-widget table td.active:hover {
-  background: var(--primary);
+.description {
+  color: #6c757d;
+  margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
-.bootstrap-datetimepicker-widget table td.today::before {
-  border-bottom-color: var(--primary);
+.contact-card {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
 }
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background: #f8f9fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.icon-box i {
+  color: #B78D65;
+  font-size: 1.5rem;
+}
+
+.contact-info h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #343a40;
+}
+
+.contact-info p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Form Styles */
+.appointment-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color:  #B78D65;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  outline: none;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #B78D65;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #ed248c;
+}
+
+.success-message {
+  text-align: center;
+  color: #198754;
+  padding: 1rem;
+  margin-top: 1rem;
+  background: #d1e7dd;
+  border-radius: 6px;
+  display: none;
+}
+
+.success-message.show {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .appointment-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .main-title {
+    font-size: 2rem;
+  }
+}
+
 
 
 /*** Testimonial ***/

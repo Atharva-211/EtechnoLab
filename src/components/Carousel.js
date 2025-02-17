@@ -10,9 +10,8 @@ const Carousel = () => {
             <div className="container">
               <div className="row justify-content-start">
                 <div className="col-10 col-lg-8">
-                  <h1 className="display-1 text-white animated slideInDown">Best Architecture And Interior Design Services</h1>
-                  <p className="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                  <a href="" className="btn btn-primary py-3 px-5 animated slideInLeft">Read More</a>
+                  <h1 className="display-1 text-white animated slideInDown">Software Solutions for Your Business Needs</h1>
+                  <p className="fs-5 fw-medium text-white mb-4 pb-3">We deliver innovative and reliable software solutions tailored to your business requirements. Our team ensures exceptional quality and performance in every project, from mobile applications to web solutions.</p>
                 </div>
               </div>
             </div>
