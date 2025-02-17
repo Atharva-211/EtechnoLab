@@ -41,8 +41,8 @@ const Feature = () => {
           </div>
           <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <div className="feature-img">
-              <img className="img-fluid" src="img/about-2.jpg" alt="" />
-              <img className="img-fluid" src="img/about-1.jpg" alt="" />
+              <img className="img-fluid" src="img/image18.png" alt="" />
+              <img className="img-fluid" src="img/image21.png" alt="" />
             </div>
           </div>
         </div>

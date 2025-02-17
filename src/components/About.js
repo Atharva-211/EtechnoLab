@@ -7,8 +7,8 @@ const About = () => {
         <div className="row g-5">
           <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
             <div className="about-img">
-              <img className="img-fluid" src="img/about-1.jpg" alt="" />
-              <img className="img-fluid" src="img/about-2.jpg" alt="" />
+              <img className="img-fluid" src="img/image20.png" alt="" />
+              <img className="img-fluid" src="img/image4.png" alt="" />
             </div>
           </div>
           <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
